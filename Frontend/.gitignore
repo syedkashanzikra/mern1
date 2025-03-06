@@ -1,0 +1,28 @@
+# Dependencies
+node_modules
+/.pnp
+.pnp.js
+
+# Build files
+build
+dist
+
+# Static files
+*.log
+*.lock
+*.env
+
+# Cache and temp files
+.cache
+.tmp
+.vscode
+.DS_Store
+
+# Editor directories and files
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Yarn & npm logs
+yarn-error.log
+npm-debug.log*
