@@ -5,6 +5,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import connectToMongoDb from "./config/db.js";
+import contactRoutes from "./routes/contactRoutes.js";
 
 dotenv.config();
 
@@ -16,6 +17,9 @@ app.use(cors())
 
 connectToMongoDb();
 app.get("/",(req,res)=>res.send("Server is running!"));
+
+// Routes
+app.use("/api/contact",contactRoutes);
 
 
 
